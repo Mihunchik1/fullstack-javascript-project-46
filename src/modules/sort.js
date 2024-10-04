@@ -1,5 +1,7 @@
+/* eslint-disable consistent-return */
 export default (arr) => {
-  const resultSort  = arr.sort(function(a, b) {
+  // eslint-disable-next-line array-callback-return
+  const resultSort = arr.sort((a, b) => {
     if (a.substring(4, 5) > b.substring(4, 5)) {
       return 1;
     }
@@ -9,6 +11,6 @@ export default (arr) => {
     if (a.substring(4, 5) === b.substring(4, 5)) {
       return 0;
     }
-  })
+  });
   return resultSort;
-}
+};
