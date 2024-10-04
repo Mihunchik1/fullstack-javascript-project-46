@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mihunchik1",
   "license": "ISC",
@@ -15,9 +14,5 @@
   },
   "dependencies": {
     "commander": "^12.1.0"
-  },
-  "devDependencies": {
-    "eslint": "^9.11.1",
-    "globals": "^15.10.0"
   }
 }
