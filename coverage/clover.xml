@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1728399287998" clover="3.2.0">
+  <project timestamp="1728399287998" name="All files">
+    <metrics statements="34" coveredstatements="34" conditionals="12" coveredconditionals="11" methods="8" coveredmethods="8" elements="54" coveredelements="53" complexity="0" loc="34" ncloc="34" packages="2" files="4" classes="4"/>
+    <package name="src">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="parser.js" path="/home/mihunchik/project2/src/parser.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.modules">
+      <metrics statements="31" coveredstatements="31" conditionals="12" coveredconditionals="11" methods="7" coveredmethods="7"/>
+      <file name="getDifferent.js" path="/home/mihunchik/project2/src/modules/getDifferent.js">
+        <metrics statements="20" coveredstatements="20" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+      </file>
+      <file name="getObjects.js" path="/home/mihunchik/project2/src/modules/getObjects.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+      </file>
+      <file name="sort.js" path="/home/mihunchik/project2/src/modules/sort.js">
+        <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="30" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="8" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="15" type="stmt"/>
+        <line num="11" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
