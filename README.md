@@ -3,3 +3,6 @@
 
 # Asciinema Parse:
 [![asciicast](https://asciinema.org/a/E9G0Sw0aKZ7LCwlNFBAsLKPWA.svg)](https://asciinema.org/a/E9G0Sw0aKZ7LCwlNFBAsLKPWA)
+
+# Asciinema .yml:
+[![asciicast](https://asciinema.org/a/N4Z2XTM5KHUF2idSJVO3ryiFb.svg)](https://asciinema.org/a/N4Z2XTM5KHUF2idSJVO3ryiFb)
