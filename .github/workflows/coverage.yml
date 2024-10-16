@@ -27,7 +27,7 @@ jobs:
    
     - name: Upload coverage to CodeClimate
       env:
-        CODECLIMATE_REPO_TOKEN: ${{ secrets.CODECLIMATE_REPO_TOKEN }}
+        CODECLIMATE_REPO_TOKEN: 5a2e17b049f5c208dfc385594bcc01cf45992cce4b39c8dfd7cb76fb645dab29
       run: |
            npm install codeclimate-test-reporter@latest
            ./node_modules/.bin/codeclimate-test-reporter upload ./coverage/lcov.info
