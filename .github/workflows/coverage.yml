@@ -1,9 +1,10 @@
-name: test
+name: CI
 
 on:
   push:
     branches:
       - main
+  pull_request:
 
 jobs:
   test:
@@ -13,9 +14,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Run tests with coverage
-      run: make test
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '21.6.2'
 
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests with coverage
+      run: npm test -- --coverage
+   
     - name: Upload coverage to CodeClimate
       env:
         CODECLIMATE_REPO_TOKEN: ${{ secrets.CODECLIMATE_REPO_TOKEN }}
