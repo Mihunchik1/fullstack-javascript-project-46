@@ -29,5 +29,5 @@ jobs:
       env:
         CODECLIMATE_REPO_TOKEN: ${{ secrets.CODECLIMATE_REPO_TOKEN }}
       run: |
-        npm install codeclimate-test-reporter
-        ./node_modules/.bin/codeclimate-test-reporter upload ./coverage/lcov.info
+           npm install codeclimate-test-reporter@latest
+           ./node_modules/.bin/codeclimate-test-reporter upload ./coverage/lcov.info
