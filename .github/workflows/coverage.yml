@@ -18,9 +18,6 @@ jobs:
     - name: Run tests
       run: make test
 
-    - name: Generate coverage report
-      run: npm test
-
     - name: Check coverage file
       run: cat ./coverage/lcov.info
 
