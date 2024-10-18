@@ -3,6 +3,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/87a0b20c0a4d8c1563f3/maintainability)](https://codeclimate.com/github/Mihunchik1/fullstack-javascript-project-46/maintainability)
 
+[![Test Coverage](https://api.codeclimate.com/v1/badges/87a0b20c0a4d8c1563f3/test_coverage)](https://codeclimate.com/github/Mihunchik1/fullstack-javascript-project-46/test_coverage)
+
 # Asciinema Parse:
 [![asciicast](https://asciinema.org/a/E9G0Sw0aKZ7LCwlNFBAsLKPWA.svg)](https://asciinema.org/a/E9G0Sw0aKZ7LCwlNFBAsLKPWA)
 
