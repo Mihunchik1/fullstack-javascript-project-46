@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "later...",
-  "main": "index.js",
+  "main": "",
   "type": "module",
   "scripts": {
     "test": "jest --coverage",
