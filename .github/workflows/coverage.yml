@@ -3,18 +3,36 @@ name: test and lint
 on: [push]
 
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
   
   test:
     runs-on: ubuntu-latest
-    needs: lint
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        
-      - name: Run tests
-        run: make test
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: make test
+
+    - name: Generate coverage report
+      run: make test
+
+    - name: Check coverage file
+      run: cat ./coverage/lcov.info
+
+    - name: Download Code Climate Test Reporter
+      run: |
+        wget -O ./cc-test-reporter https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+        chmod +x ./cc-test-reporter
+
+    - name: Upload coverage to Code Climate
+      env:
+        CC_TEST_REPORTER_ID: ${{ secrets.CODECLIMATE_REPO_TOKEN }}
+      run: |
+        ./cc-test-reporter before-build
+        ./cc-test-reporter format-coverage -t lcov -o coverage/codeclimate.json
+        ./cc-test-reporter upload-coverage
