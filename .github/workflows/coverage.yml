@@ -16,7 +16,7 @@ jobs:
       run: npm install
 
     - name: Run tests
-      run: make test
+      run: npm test
 
     - name: Check coverage file
       run: cat ./coverage/lcov.info
