@@ -21,5 +21,5 @@ test('get different', () => {
     verbose: true,
     host: 'hexlet.io',
   };
-  expect(getDiff([obj1, obj2])).toEqual(result);
+  expect(getDiff([obj1, obj2], 'stylish')).toEqual(result);
 });
