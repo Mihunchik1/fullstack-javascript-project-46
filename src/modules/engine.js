@@ -1,3 +1,4 @@
+/* eslint-disable no-prototype-builtins */
 export default (obj1, obj2) => {
   const iter = (firstObj, secondObj) => {
     const keys = [...new Set([...Object.keys(firstObj), ...Object.keys(secondObj)])].sort();
