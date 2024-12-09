@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "later...",
-  "main": "",
+  "main": "bin/gendiff.js",
   "type": "module",
   "scripts": {
     "test": "jest --coverage",
