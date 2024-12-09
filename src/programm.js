@@ -13,5 +13,5 @@ export default () => {
       parser(filepath1, filepath2, program.opts().format);
     });
 
-  program.parse();
+  program.parse(process.argv);
 };
