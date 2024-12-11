@@ -1,8 +1,8 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "1.0.0",
-  "main": "./bin/gendiff.js",
+  "description": "The application is a library for finding the differences between two files",
+  "main": "bin/gendiff.js",
   "type": "module",
   "scripts": {
     "test": "jest --coverage",
