@@ -21,8 +21,6 @@ Property 'group1.nest' was updated. From [complex value] to 'str'
 Property 'group2' was removed
 Property 'group3' was added with value: [complex value]`;
 
-  const consoleLogSpy = jest.spyOn(console, 'log').mockImplementation();
-
   const result = parser(file1, file2, 'plain');
 
   expect(result).toEqual(expectedResult);

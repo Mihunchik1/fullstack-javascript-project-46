@@ -54,8 +54,6 @@ test('generate different', () => {
     }
 }`;
 
-  const consoleLogSpy = jest.spyOn(console, 'log').mockImplementation();
-
   const result = parser(file1, file2, 'stylish');
 
   expect(result).toEqual(expectedResult);
