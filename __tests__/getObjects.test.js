@@ -17,7 +17,7 @@ test('get objects', () => {
       setting6: {
         key: 'value',
         doge: {
-            wow: '',
+          wow: '',
         },
       },
     },
