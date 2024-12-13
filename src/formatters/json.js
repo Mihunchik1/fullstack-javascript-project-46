@@ -3,26 +3,25 @@ const formatJson = (diff) => {
     const {
       type, key, value, oldValue, newValue, children,
     } = node;
-    switch (type) {
-      case 'added':
-        acc[key] = { type, value };
-        break;
-      case 'removed':
-        acc[key] = { type, value };
-        break;
-      case 'updated':
-        acc[key] = { type, oldValue, newValue };
-        break;
-      case 'nested':
-        acc[key] = { type, children: jsonObject(children) };
-        break;
-      case 'unchanged':
-        acc[key] = { type, value };
-        break;
-      default:
-        throw new Error(`Unknown type: ${type}`);
-    }
-    return acc;
+
+    const newEntry = (() => {
+      switch (type) {
+        case 'added':
+          return { [key]: { type, value } };
+        case 'removed':
+          return { [key]: { type, value } };
+        case 'updated':
+          return { [key]: { type, oldValue, newValue } };
+        case 'nested':
+          return { [key]: { type, children: jsonObject(children) } };
+        case 'unchanged':
+          return { [key]: { type, value } };
+        default:
+          throw new Error(`Unknown type: ${type}`);
+      }
+    })();
+
+    return { ...acc, ...newEntry };
   }, {});
 
   return JSON.stringify(jsonObject(diff), null, 2);
