@@ -10,7 +10,7 @@ export default (format) => {
   };
 
   if (!formatters[format]) {
-    throw new Error('unknown format');
+    return formatters.stylish;
   }
   return formatters[format];
 };
