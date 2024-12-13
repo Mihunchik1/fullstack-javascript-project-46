@@ -23,11 +23,7 @@ Property 'group3' was added with value: [complex value]`;
 
   const consoleLogSpy = jest.spyOn(console, 'log').mockImplementation();
 
-  parser(file1, file2, 'plain');
+  const result = parser(file1, file2, 'plain');
 
-  expect(consoleLogSpy).toHaveBeenCalled();
-
-  const [resultFunc] = consoleLogSpy.mock.calls[0];
-  expect(resultFunc).toEqual(expectedResult);
-  consoleLogSpy.mockRestore();
+  expect(result).toEqual(expectedResult);
 });
