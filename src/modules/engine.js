@@ -5,9 +5,9 @@ export default (obj1, obj2) => {
       return keys;
     }
 
-    const [pivot, ...rest] = keys;
-    const lesser = rest.filter((key) => key < pivot);
-    const greater = rest.filter((key) => key >= pivot);
+    const pivot = keys[0];
+    const lesser = keys.filter((key, index) => index > 0 && key < pivot);
+    const greater = keys.filter((key, index) => index > 0 && key >= pivot);
 
     return [...getSortedKeys(lesser), pivot, ...getSortedKeys(greater)];
   };
