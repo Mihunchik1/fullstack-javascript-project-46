@@ -8,7 +8,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/87a0b20c0a4d8c1563f3/test_coverage)](https://codeclimate.com/github/Mihunchik1/fullstack-javascript-project-46/test_coverage)
 
 # Difference calculator:
-Welcome to *your library*! This library is designed to compare files and simplify working with them. You can easily find out what has changed between files and quickly find the differences.
+Welcome to the *Difference Calculator*! This library is designed to compare files and simplify working with them. You can easily find out what has changed between files and quickly find the differences. The library works with files .yml .ymal .json. You can also choose the format for displaying differences yourself.
 
 # Installation:
 ```
