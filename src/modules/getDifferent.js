@@ -6,6 +6,7 @@ export default (arr, format) => {
 
   const differences = diffEngine(object1, object2);
   const formater = chooseTheFormatter(format);
+  console.log(formater);
   const result = formater(differences, diffEngine);
   return result;
 };
