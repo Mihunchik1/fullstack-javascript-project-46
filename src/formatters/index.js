@@ -8,5 +8,9 @@ export default (format) => {
     plain: formatPlain,
     json: formatJson,
   };
+
+  if (!formatters[format]) {
+    throw new Error('unknown format');
+  }
   return formatters[format];
 };
