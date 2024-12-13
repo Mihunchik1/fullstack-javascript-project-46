@@ -6,5 +6,5 @@ export default (filepath1, filepath2, format) => {
   const getExtensionAndObjects = getExtension(filepath1, filepath2);
   const objects = getObj(getExtensionAndObjects);
   const diff = getDiff(objects, format);
-  console.log(diff);
+  return diff;
 };

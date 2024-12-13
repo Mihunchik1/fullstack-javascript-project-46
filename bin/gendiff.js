@@ -12,7 +12,7 @@ const app = () => {
     .option('-f, --format [type]', 'output format', 'stylish')
     .arguments('<filepath1> <filepath2>')
     .action((filepath1, filepath2) => {
-      parser(filepath1, filepath2, program.opts().format);
+      console.log(parser(filepath1, filepath2, program.opts().format));
     });
 
   program.parse(process.argv);
