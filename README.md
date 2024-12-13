@@ -7,6 +7,20 @@
 ### Test coverage:
 [![Test Coverage](https://api.codeclimate.com/v1/badges/87a0b20c0a4d8c1563f3/test_coverage)](https://codeclimate.com/github/Mihunchik1/fullstack-javascript-project-46/test_coverage)
 
+# Difference calculator:
+##### The library allows you to find differences between two files with extensions .yml .ymal .json and output the result in various formats
+
+# Installation:
+```
+make install
+```
+
+# Minimum requirements:
+||Version|
+|--|--|
+|Node|21.6.2|
+|npm|10.2.4|
+
 ## Differences of flat json files:
 [![asciicast](https://asciinema.org/a/E9G0Sw0aKZ7LCwlNFBAsLKPWA.svg)](https://asciinema.org/a/E9G0Sw0aKZ7LCwlNFBAsLKPWA)
 
