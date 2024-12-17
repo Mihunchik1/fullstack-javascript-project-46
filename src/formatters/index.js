@@ -9,8 +9,5 @@ export default (format) => {
     json: formatJson,
   };
 
-  if (!formatters[format]) {
-    return formatters.stylish;
-  }
   return formatters[format];
 };

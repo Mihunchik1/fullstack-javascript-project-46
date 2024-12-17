@@ -66,5 +66,5 @@ test('get objects', () => {
       fee: 100500,
     },
   };
-  expect(getObj([[file1, '.yml'], [file2, '.yml']])).toEqual([obj1, obj2]);
+  expect(getObj(file1, file2)).toEqual([obj1, obj2]);
 });
