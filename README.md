@@ -12,7 +12,10 @@ Welcome to the *Difference Calculator*! This library is designed to compare file
 
 # Installation:
 ```
-make install
+* git clone https://github.com/Mihunchik1/fullstack-javascript-project-46.git
+* cd fullstack-javascript-project-46
+* npm install
+* npm link
 ```
 
 # Minimum requirements:
@@ -20,6 +23,11 @@ make install
 |--|--|
 |Node|21.6.2|
 |npm|10.2.4|
+
+# Help output
+```
+gendiff -h
+```
 
 ## Differences of flat json files:
 [![asciicast](https://asciinema.org/a/E9G0Sw0aKZ7LCwlNFBAsLKPWA.svg)](https://asciinema.org/a/E9G0Sw0aKZ7LCwlNFBAsLKPWA)
