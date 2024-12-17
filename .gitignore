@@ -3,3 +3,5 @@
 *.save
 
 /coverage/
+
+/cc-test-reporter/
