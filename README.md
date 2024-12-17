@@ -11,12 +11,11 @@
 Welcome to the *Difference Calculator*! This library is designed to compare files and simplify working with them. You can easily find out what has changed between files and quickly find the differences. The library works with files .yml .ymal .json. You can also choose the format for displaying differences yourself.
 
 # Installation:
-```
-* git clone https://github.com/Mihunchik1/fullstack-javascript-project-46.git
-* cd fullstack-javascript-project-46
-* npm install
-* npm link
-```
+* ```git clone https://github.com/Mihunchik1/fullstack-javascript-project-46.git```
+* ```cd fullstack-javascript-project-46```
+* ```npm install```
+* ```npm link```
+
 
 # Minimum requirements:
 ||Version|
