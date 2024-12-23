@@ -10,7 +10,6 @@ const __dirname = path.dirname(__filename);
 test('generate different', () => {
   const file1 = path.join(__dirname, '__fixtures__', 'file1.json');
   const file2 = path.join(__dirname, '__fixtures__', 'file2.json');
-  
 
   const result = parser(file1, file2, 'json');
 
