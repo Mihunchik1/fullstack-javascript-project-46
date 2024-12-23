@@ -1,16 +1,16 @@
+const indentSize = 4;
+// eslint-disable-next-line no-shadow
+const formatValue = (value, depth) => {
+  if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+    const entries = Object.entries(value).map(([key, val]) => `${' '.repeat((depth + 1) * indentSize)}${key}: ${formatValue(val, depth + 1)}`);
+    return `{\n${entries.join('\n')}\n${' '.repeat(depth * indentSize)}}`;
+  }
+  return value;
+};
+
 const formatStylish = (diff, diffEngine, depth = 1) => {
-  const indentSize = 4;
   const currentIndent = ' '.repeat(depth * indentSize - 2);
   const bracketIndent = ' '.repeat((depth - 1) * indentSize);// добавить аскинему
-
-  // eslint-disable-next-line no-shadow
-  const formatValue = (value, depth) => {
-    if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
-      const entries = Object.entries(value).map(([key, val]) => `${' '.repeat((depth + 1) * indentSize)}${key}: ${formatValue(val, depth + 1)}`);
-      return `{\n${entries.join('\n')}\n${' '.repeat(depth * indentSize)}}`;
-    }
-    return value;
-  };
 
   const lines = diff.map((node) => {
     const {

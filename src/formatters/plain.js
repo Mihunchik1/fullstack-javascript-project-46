@@ -1,14 +1,14 @@
-const formatPlain = (diff, diffEngine, path = []) => {
-  const getFormatValue = (value) => {
-    if (typeof value === 'object' && value !== null) {
-      return '[complex value]';
-    }
-    if (typeof value === 'string') {
-      return `'${value}'`;
-    }
-    return value;
-  };
+const getFormatValue = (value) => {
+  if (typeof value === 'object' && value !== null) {
+    return '[complex value]';
+  }
+  if (typeof value === 'string') {
+    return `'${value}'`;
+  }
+  return value;
+};
 
+const formatPlain = (diff, diffEngine, path = []) => {
   const lines = diff.flatMap((node) => {
     const {
       type, key, value, oldValue, newValue, children,
